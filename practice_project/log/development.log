@@ -27,3 +27,29 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4848)
 
 
+Started GET "/users" for ::1 at 2023-12-24 00:42:14 -0500
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/" for ::1 at 2023-12-24 00:42:32 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yosypdobosh/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yosypdobosh/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.7ms | Allocations: 298)
+Completed 200 OK in 18ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 1012)
+
+
+Started GET "/users" for ::1 at 2023-12-24 00:45:11 -0500
+Processing by UsersController#index as */*
+  Parameters: {"login"=>"demo1@user.io", "password"=>"[FILTERED]", "user"=>{"login"=>"demo1@user.io", "password"=>"[FILTERED]"}}
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 283)
+
+
+Started GET "/users" for ::1 at 2023-12-24 14:24:14 -0500
+Processing by UsersController#index as */*
+  Parameters: {"login"=>"demo1@user.io", "password"=>"[FILTERED]", "user"=>{"login"=>"demo1@user.io", "password"=>"[FILTERED]"}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 10)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 621)
+
+
