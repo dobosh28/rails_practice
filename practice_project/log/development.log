@@ -1,0 +1,29 @@
+Started GET "/" for ::1 at 2023-12-23 23:43:59 -0500
+
+ActiveRecord::NoDatabaseError - We could not find your database: practice_project_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+Started POST "/__better_errors/a0541da1a54ba140/variables" for ::1 at 2023-12-23 23:44:00 -0500
+Started GET "/" for ::1 at 2023-12-23 23:48:16 -0500
+
+ActiveRecord::NoDatabaseError - We could not find your database: practice_project_development. Which can be found in the database configuration file located at config/database.yml.
+To resolve this issue:
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+To create your database, run:
+        bin/rails db:create:
+
+Started POST "/__better_errors/9681f06366b54c6b/variables" for ::1 at 2023-12-23 23:48:17 -0500
+  [1m[35m (111.9ms)[0m  [1m[35mCREATE DATABASE "practice_project_development" ENCODING = 'unicode'[0m
+  [1m[35m (61.4ms)[0m  [1m[35mCREATE DATABASE "practice_project_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2023-12-23 23:50:38 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yosypdobosh/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yosypdobosh/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 583)
+Completed 200 OK in 10ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4848)
+
+
