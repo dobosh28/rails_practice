@@ -53,3 +53,161 @@ Processing by UsersController#index as */*
 Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 621)
 
 
+Started GET "/users?fav_food=pizza" for ::1 at 2023-12-24 14:29:09 -0500
+Processing by UsersController#index as */*
+  Parameters: {"login"=>"demo1@user.io", "password"=>"[FILTERED]", "fav_food"=>"pizza", "user"=>{"login"=>"demo1@user.io", "password"=>"[FILTERED]"}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started POST "/users" for ::1 at 2023-12-24 14:30:59 -0500
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+
+Started POST "/users" for ::1 at 2023-12-24 14:32:09 -0500
+Processing by UsersController#create as */*
+  Parameters: {"login"=>"demo1@user.io", "password"=>"[FILTERED]", "age"=>24, "user"=>{"login"=>"demo1@user.io", "password"=>"[FILTERED]", "age"=>24}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 668)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/users" for ::1 at 2023-12-24 14:32:33 -0500
+Processing by UsersController#create as */*
+  Parameters: {"login"=>"demo1@user.io", "password"=>"[FILTERED]", "age"=>24, "user"=>{"login"=>"demo1@user.io", "password"=>"[FILTERED]", "age"=>24}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/users" for ::1 at 2023-12-24 14:32:53 -0500
+Processing by UsersController#create as */*
+  Parameters: {"login"=>"demo1@user.io", "password"=>"[FILTERED]", "age"=>24, "user"=>{"login"=>"demo1@user.io", "password"=>"[FILTERED]", "age"=>24}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/users" for ::1 at 2023-12-24 14:33:26 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "user"=>{"fav_food"=>"pizza", "controller"=>"users", "action"=>"create"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 2ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started GET "/users" for ::1 at 2023-12-24 14:33:41 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 8)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 468)
+
+
+Started POST "/users" for ::1 at 2023-12-24 14:33:56 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "user"=>{"fav_food"=>"pizza", "controller"=>"users", "action"=>"create"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 619)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/users" for ::1 at 2023-12-24 14:36:16 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "user"=>{"fav_food"=>"pizza", "controller"=>"users", "action"=>"create"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started GET "/users" for ::1 at 2023-12-24 14:38:44 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza", "user"=>{"fav_food"=>"pizza", "controller"=>"users", "action"=>"index"}}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1581)
+
+
+Started POST "/users" for ::1 at 2023-12-24 14:39:28 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza", "user"=>{"fav_food"=>"pizza", "controller"=>"users", "action"=>"create"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 12ms (ActiveRecord: 0.0ms | Allocations: 707)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+Started POST "/users" for ::1 at 2023-12-24 14:40:18 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 619)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/users" for ::1 at 2023-12-24 14:40:23 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 
+Started POST "/users" for ::1 at 2023-12-24 14:40:33 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 605)
+
+
+
+ActionController::InvalidAuthenticityToken - Can't verify CSRF token authenticity.:
+
+Started POST "/users" for ::1 at 2023-12-24 14:43:55 -0500
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{}}
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 285)
+
+
+Started GET "/users/:2" for ::1 at 2023-12-24 14:45:42 -0500
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users/:2" for ::1 at 2023-12-24 14:46:14 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>":2", "user"=>{}}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/users/:2" for ::1 at 2023-12-24 14:47:51 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>":2"}
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 123)
+
+
+Started GET "/users/2" for ::1 at 2023-12-24 14:48:06 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 123)
+
+
