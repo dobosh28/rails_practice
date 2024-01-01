@@ -1,14 +1,14 @@
 class ChangeUserModel < ActiveRecord::Migration[7.0]
-  def change
-
-    # Remove name and email columns
+  def up
     remove_column :users, :name
     remove_column :users, :email
-
-    # Add username column
-    add_column :users, :username, :string, null: false
-
-    # Add index on username column for faster lookups and ensure uniqueness at DB level 
+    add_column :users, :username, :string
     add_index :users, :username, unique: true
+  end
+
+  def down
+    add_column :users, :name, :string 
+    add_column :users, :email, :string
+    remove_column :users, :username
   end
 end
