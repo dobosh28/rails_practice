@@ -6,8 +6,8 @@ class Artwork < ApplicationRecord
     validates :user_id, presence: true
 
     # Associations
-    belongs_to :artist, class_name: 'User', foreign_key: 'artist_id'
-    has_many :artwork_shares, dependent: :destroy
-    has_many :shared_viewers, through: :artwork_shares, source: :viewer
+    belongs_to :artist, class_name: 'User', foreign_key: 'artist_id', inverse_of: :artworks
+    has_many :artwork_shares, dependent: :destroy, inverse_of: :artwork
+    has_many :shared_viewers, through: :artwork_shares, source: :viewer, dependent: :destroy, inverse_of: :shared_artworks
 
 end
